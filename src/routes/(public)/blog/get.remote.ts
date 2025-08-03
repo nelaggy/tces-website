@@ -1,8 +1,9 @@
 import type { BlogPost } from "$lib/types/blog";
 import db from "$lib/server/db";
 import { query } from "$app/server";
+import * as v from "valibot";
 
-export const getPosts = query(async (page = 0) => {
+export const getPosts = query(v.optional(v.number()),async (page = 0) => {
   const data = await db`
     SELECT * FROM posts
     ORDER BY created_at DESC

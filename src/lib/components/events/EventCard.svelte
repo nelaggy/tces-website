@@ -1,19 +1,8 @@
 <script lang="ts">
-	let {
-		title,
-		preview,
-		href,
-		location,
-		date,
-		time
-	}: {
-		title: string;
-		preview: string;
-		href: string;
-		location: string;
-		date: string;
-		time: string;
-	} = $props();
+	import type { CalEvent } from "$lib/types/events";
+
+	let { event }: { event: CalEvent } = $props();
+  let { title, description, href, location, starts_at } = event;
 </script>
 
 <article
@@ -26,7 +15,7 @@
 	</a>
 
 	<p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-		{preview}
+		{description}
 	</p>
 
 	<div class="mt-3 space-y-2">
@@ -46,7 +35,7 @@
 					d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
 				></path>
 			</svg>
-			<span>{date}, {time}</span>
+			<span>{starts_at ? starts_at : 'TBD'}</span>
 		</div>
 
 		<!-- Location with pin icon -->
@@ -71,7 +60,7 @@
 					d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
 				></path>
 			</svg>
-			<span>{location}</span>
+			<span>{location ? location : 'TBD'}</span>
 		</div>
 	</div>
 

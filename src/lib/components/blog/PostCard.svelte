@@ -1,5 +1,8 @@
 <script lang="ts">
-    let { title, preview, href } : { title: string, preview: string, href: string } = $props();
+	import type { BlogPost } from "$lib/types/blog";
+
+  let { post } : { post: BlogPost } = $props();
+  let { title, content, href } = post;
 </script>
 
 <article
@@ -33,7 +36,7 @@
   </a>
 
   <p class="mt-2 text-sm/relaxed text-gray-500 line-clamp-3">
-    {preview}
+    {content}
   </p>
 
   <a href={href} class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-sky-800">
