@@ -1,5 +1,5 @@
 import type { PageServerLoad } from "./$types";
-import { getEventCount, getEvents } from "$lib/server/events/get";
+import { getEventCount, getEvents } from "./get.remote";
 
 export const load : PageServerLoad = async () => {
   const events = await getEvents();

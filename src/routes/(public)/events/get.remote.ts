@@ -1,7 +1,9 @@
 import type { CalEvent } from "$lib/types/events";
-import db from "../db";
+import db from "$lib/server/db";
+import { query } from "$app/server";
+import * as v from "valibot";
 
-export const getEvents = async (page = 0) => {
+export const getEvents = query(v.optional(v.number()), async (page = 0) => {
   const data = await db`
     SELECT * FROM events
     ORDER BY starts_at DESC
@@ -15,11 +17,11 @@ export const getEvents = async (page = 0) => {
     href: `/events/${event.id}`
   }));
   return events;
-};
+});
 
-export const getEventCount = async () => {
+export const getEventCount = query(async () => {
   const data = await db`
     SELECT COUNT(*) as count FROM events
   `;
   return data[0].count;
-};
+});
