@@ -16,3 +16,10 @@ export const getEvents = async (page = 0) => {
   }));
   return events;
 };
+
+export const getEventCount = async () => {
+  const data = await db`
+    SELECT COUNT(*) as count FROM events
+  `;
+  return data[0].count;
+};

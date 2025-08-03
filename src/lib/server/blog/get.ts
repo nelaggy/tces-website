@@ -14,3 +14,10 @@ export const getPosts = async (page = 0) => {
   }))
   return posts;
 };
+
+export const getPostCount = async () => {
+  const data = await db`
+    SELECT COUNT(*) as count FROM posts
+  `;
+  return data[0].count;
+};
