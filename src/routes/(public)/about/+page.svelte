@@ -16,6 +16,11 @@
     ];
 </script>
 
+<svelte:head>
+  <title>About TCES - Trinity College Engineering Society</title>
+  <meta name="description" content="Learn more about the Trinity College Engineering Society (TCES), our mission, sponsors, and committee members." />
+</svelte:head>
+
 <header class="bg-white">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">

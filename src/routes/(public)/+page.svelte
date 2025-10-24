@@ -3,6 +3,11 @@
 	import SecButton from '$lib/components/ui/SecButton.svelte';
 </script>
 
+<svelte:head>
+	<title>TCES - Trinity College Engineering Society</title>
+	<meta name="description" content="Trinity College Engineering Society (TCES) brings together engineers across Trinity College, Cambridge through talks, socials, formals, and trips." />
+</svelte:head>
+
 <section class="bg-[url(/img/great_court_bg.jpg)] bg-cover bg-center -mt-16">
 	<div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
 		<div class="mx-auto max-w-xl text-center">
