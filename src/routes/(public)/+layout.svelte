@@ -22,7 +22,7 @@
                         Home
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-sky-900 group-hover:w-full transition-all duration-300"></span>
                     </a>
-                    <a href="/events" 
+                    <!-- <a href="/events" 
                        class="text-gray-700 hover:text-sky-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group">
                         Events
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-sky-900 group-hover:w-full transition-all duration-300"></span>
@@ -31,7 +31,7 @@
                        class="text-gray-700 hover:text-sky-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group">
                         Blog
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-sky-900 group-hover:w-full transition-all duration-300"></span>
-                    </a>
+                    </a> -->
                     <a href="/about" 
                        class="text-gray-700 hover:text-sky-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group">
                         About

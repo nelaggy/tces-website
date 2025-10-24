@@ -22,4 +22,4 @@ vite.config.ts.timestamp-*
 
 package-lock.json
 
-static/img
+static/

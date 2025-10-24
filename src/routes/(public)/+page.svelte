@@ -3,7 +3,7 @@
 	import SecButton from '$lib/components/ui/SecButton.svelte';
 </script>
 
-<section class="bg-[url(img/great_court_bg.jpg)] bg-cover bg-center -mt-16">
+<section class="bg-[url(/img/great_court_bg.jpg)] bg-cover bg-center -mt-16">
 	<div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
 		<div class="mx-auto max-w-xl text-center">
 			<div class="text-xl text-gray-200 sm:text-4xl">
@@ -12,12 +12,11 @@
       </div>
 
 			<p class="mt-4 sm:text-xl/relaxed text-gray-300">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-				numquam ea!
+				Bringing together the engineers of Trinity College.
 			</p>
 
 			<div class="mt-8 flex flex-wrap justify-center gap-4">
-				<PriButton href="/">Get Started</PriButton>
+				<PriButton href="https://lists.cam.ac.uk/sympa/info/soc-tces" newTab={true} >Join Us :&#41;</PriButton>
 				<SecButton href="/about">Learn More</SecButton>
 			</div>
 		</div>
