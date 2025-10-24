@@ -67,14 +67,14 @@
                     class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-900 hover:bg-gray-50 rounded-md transition-colors duration-200">
                         Home
                     </a>
-                    <a href="/events" 
+                    <!-- <a href="/events" 
                     class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-900 hover:bg-gray-50 rounded-md transition-colors duration-200">
                         Events
                     </a>
                     <a href="/blog" 
                     class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-900 hover:bg-gray-50 rounded-md transition-colors duration-200">
                         Blog
-                    </a>
+                    </a> -->
                     <a href="/about" 
                     class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-900 hover:bg-gray-50 rounded-md transition-colors duration-200">
                         About
